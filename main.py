@@ -56,11 +56,11 @@ for filename in dirs:
                 moviename = filename[0:filename.find(years[0])]
                 moviename = moviename.replace("."," ")
                 moviename = moviename.rstrip()
-                url = 'http://www.omdbapi.com/?apikey=dd773c5d&t={0}&y={1}'.format(moviename, years[0])
+                url = 'http://www.omdbapi.com/?apikey=XXXX&t={0}&y={1}'.format(moviename, years[0])
         else:
                 moviename = filename.replace("."," ")
                 moviename = moviename.rstrip()
-                url = 'http://www.omdbapi.com/?apikey=dd773c5d&t={0}'.format(moviename)
+                url = 'http://www.omdbapi.com/?apikey=XXXX&t&t={0}'.format(moviename)
         counter = counter + 1
         fetchedDetails = requests.get(url)
         details = fetchedDetails.content
